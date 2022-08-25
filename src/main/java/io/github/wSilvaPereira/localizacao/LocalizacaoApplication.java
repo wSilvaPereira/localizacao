@@ -16,8 +16,9 @@ public class LocalizacaoApplication implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-		Cidade cidade = new Cidade(null, "Curitiba", null);
-		cidadesService.filtroDinamico(cidade).forEach(System.out::println);
+		cidadesService.listarCidadesPorNomeSQL();
+//		Cidade cidade = new Cidade(null, "Curitiba", null);
+//		cidadesService.filtroDinamico(cidade).forEach(System.out::println);
 	}
 
 	public static void main(String[] args) {
